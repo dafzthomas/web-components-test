@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Components</title>
   <style type="text/css">
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      margin: 0 auto;
-      max-width: 40em;
-      width: 88%;
+      max-width: 40rem;
+      padding: 2rem;
     }
   </style>
 </head>
@@ -19,6 +24,9 @@
 
   <p>Basic example of a native web component working.</p>
 
-  <script src="index.js"></script>
+  <home-footer></home-footer>
+
+  <script src="components/home-header.js"></script>
+  <script src="components/home-footer.js"></script>
 </body>
 </html>
